@@ -1,0 +1,5 @@
+Scrapy==2.6.2
+Django==3.2.15
+scrapy-djangoitem==1.1.1
+django-dirtyfields==1.8.2
+schedule==1.1.0
