@@ -21,18 +21,18 @@ python manage.py createsuperuser  	&emsp; \# enter username/password at prompt a
 \# run spider \
 cd api\_crawler/ \
 vim api\_crawler/settings.py \
-	# find placeholder <REPO_PATH> and replace with local path to git repo \
+&emsp; # find placeholder <REPO_PATH> and replace with local path to git repo \
 scrapy crawl pspider --logfile pokemon-spider.log --loglevel INFO 
 
 
 \# run admin screens to view data \
 cd pokemon/ \
-python manage.py runserver		\# goto localhost:8000/admin and login to view crawled data 
+python manage.py runserver		&emsp; \# goto localhost:8000/admin and login to view crawled data 
 
 
 \# schedule hourly/daily crawls etc \
 cd api\_crawler/ \
-python scrapy\_schedule.py --help	\# follow instructions to schedule scrapy 
+python scrapy\_schedule.py --help	&emsp; \# follow instructions to schedule scrapy 
 
 
 ## TESTING
