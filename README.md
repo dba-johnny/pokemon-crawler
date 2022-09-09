@@ -15,24 +15,24 @@ python -m pip install -r requirements.txt
 \# django setup \
 cd pokemon/ \
 python manage.py migrate \
-python manage.py createsuperuser  	\# enter username/password at prompt and remember for later 
+python manage.py createsuperuser  	> \# enter username/password at prompt and remember for later 
 
 
 \# run spider \
 cd api\_crawler/ \
 vim api\_crawler/settings.py \
-	# find placeholder <REPO_PATH> and replace with local path to git repo \
+	> # find placeholder <REPO_PATH> and replace with local path to git repo \
 scrapy crawl pspider --logfile pokemon-spider.log --loglevel INFO 
 
 
 \# run admin screens to view data \
 cd pokemon/ \
-python manage.py runserver		\# goto localhost:8000/admin and login to view crawled data 
+python manage.py runserver		> \# goto localhost:8000/admin and login to view crawled data 
 
 
 \# schedule hourly/daily crawls etc \
 cd api\_crawler/ \
-python scrapy\_schedule.py --help	\# follow instructions to schedule scrapy 
+python scrapy\_schedule.py --help	> \# follow instructions to schedule scrapy 
 
 
 ## TESTING
