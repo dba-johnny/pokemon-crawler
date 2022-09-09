@@ -38,5 +38,5 @@ python scrapy\_schedule.py --help	&emsp; \# follow instructions to schedule scra
 
 ## NOTES
 - Design & Implementation: I think these are reasonably self-explanatory, though there are some useful comments in the 'api\_crawler.api\_crawler.items' module
-- Scalability: it is written with reasonable scalability in mind, but I would want to double check the \# db hits per page of crawled data (whilst I have of course taken relevant precautions etc, e.g. prefetch\_related for m2m queries, such things are worth being certain of when scaling up).
-- Testing: to test end to end, probably worth building a test api with a known toy dataset which includes all relations defined in 'pokemon.pokemon\_app.models' module. Check data . This can test both data loads and data updates.
+- Scalability: it is written with reasonable scalability in mind, but certainly I would want to move from a in-process sqlite db (as it is currently) to postgres. Also I would want to double check the \# db hits per page of crawled data (whilst I have of course taken relevant precautions etc, e.g. prefetch\_related for m2m queries, such things are worth being certain of when scaling up).
+- Testing: to test end to end, probably worth building a test api with a known toy dataset which includes all relations defined in 'pokemon.pokemon\_app.models' module. This can be used to test both data loads and data updates.
