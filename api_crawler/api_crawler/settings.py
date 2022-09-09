@@ -8,7 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # Setting up django's project full path.
 import sys
-sys.path.insert(0, '/home/johnny/Various/cybsafe/pokemon-crawler/pokemon')
+sys.path.insert(0, '<REPO_PATH>/pokemon-crawler/pokemon')
 
 # Setting up django's settings module name.
 # This module is located at /home/rolando/projects/myweb/myweb/settings.py.

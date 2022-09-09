@@ -1,8 +1,8 @@
 *.pyc
 *.swp
+*.log
 **/__pycache__/
 venv/
 .venv/
 .idea/
 db.sqlite3
-
